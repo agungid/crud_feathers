@@ -1,57 +1,33 @@
 # intro_backend
 
-> Belajar membuat backend dari feathersjs
+> Membuat CRUD sederhan sebagai API dengan Feathers dan Database Postgre
 
-## About
+[Feathers](http://feathersjs.com)
 
-This project uses [Feathers](http://feathersjs.com). An open source web framework for building modern real-time applications.
-
-## Getting Started
+## Cara Instal
 
 Getting up and running is as easy as 1, 2, 3.
 
-1. Make sure you have [NodeJS](https://nodejs.org/) and [npm](https://www.npmjs.com/) installed.
-2. Install your dependencies
+1. Anda harus sudah mengistall [NodeJS](https://nodejs.org/) dan [npm](https://www.npmjs.com/).
+2. Clone project
+    ```
+    git clone https://github.com/agungid/crud_feathers.git
+    ```
+3. Install dependencies
 
     ```
-    cd path/to/intro_backend; npm install
+    cd path/to/crud_feathers;
     ```
-
-3. Start your app
-
+    dan jalakan 
+    ```npm install```
+4. Membuat database di postgresql dan edit 
+  ```config/default.json ```
+  ```
+  "postgres": "postgres://username_db:password_db@localhost:5432/nama_database"
+  ```
+5. Selanjutnya jalankan 
     ```
     npm start
     ```
-
-## Testing
-
-Simply run `npm test` and all your tests in the `test/` directory will be run.
-
-## Scaffolding
-
-Feathers has a powerful command line interface. Here are a few things it can do:
-
-```
-$ npm install -g feathers-cli             # Install Feathers CLI
-
-$ feathers generate service               # Generate a new Service
-$ feathers generate hook                  # Generate a new Hook
-$ feathers generate model                 # Generate a new Model
-$ feathers help                           # Show all commands
-```
-
-## Help
-
-For more information on all the things you can do with Feathers visit [docs.feathersjs.com](http://docs.feathersjs.com).
-
-## Changelog
-
-__0.1.0__
-
-- Initial release
-
-## License
-
-Copyright (c) 2016
-
-Licensed under the [MIT license](LICENSE).
+Untuk frontend menggunakan vue dapat dilihat [Vue+Vuex](https://github.com/agungid/vue_vuex)
+dokementasi feathersjs dapat dilihat di [Feathers](http://feathersjs.com)
